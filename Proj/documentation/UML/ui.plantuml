@@ -1,0 +1,47 @@
+@startuml
+  namespace tdt4145.ui {
+    class tdt4145.ui.Main {
+        {static} + exit()
+        {static} + main()
+    }
+  }
+  
+
+  namespace tdt4145.ui {
+    class tdt4145.ui.MainMenu {
+        + createPost()
+        + menu()
+        + printPosts()
+        + searchPosts()
+        + viewStatistics()
+        + welcomeMenu()
+    }
+  }
+  
+
+  namespace tdt4145.ui {
+    class tdt4145.ui.PostMenu {
+        + comment()
+        + getInfo()
+        + likePost()
+        + menu()
+    }
+  }
+  
+
+  namespace tdt4145.ui {
+    class tdt4145.ui.ThreadHandler {
+        {static} + comment()
+        {static} + post()
+    }
+  }
+  
+
+  namespace tdt4145.ui {
+    class tdt4145.ui.UserHandler {
+        {static} - emailRegex : String
+        {static} + create()
+        {static} + login()
+    }
+  }
+@enduml
